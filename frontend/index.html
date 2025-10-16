@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostels_Ghana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Campus Hostel GH</h1>
+    <p>Find hostels for all university campuses in Ghana</p>
+  </header>
+
+  <!-- 🔽 Tabs -->
+  <nav class="tabs">
+    <button class="tab active" onclick="switchTab('ucc', event)">UCC</button>
+    <button class="tab" onclick="switchTab('ug', event)">UG</button>
+    <button class="tab" onclick="switchTab('knust', event)">KNUST</button>
+    <button class="tab" onclick="switchTab('uew', event)">UEW</button>
+    <button class="tab" onclick="switchTab('uds', event)">UDS</button>
+  </nav>
+
+  <!-- 🔍 Search -->
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by hostel name or location..." onkeyup="searchHostels()">
+  </section>
+
+  <!-- 🏫 UCC Section -->
+  <section class="hostels active" id="ucc">
+    <div class="hostel-card" data-name="Peace Villa Hostel" data-location="Ayensu" data-distance="close">
+      <h2>Peace Villa Hostel</h2>
+      <p><strong>Location:</strong> Ayensu, UCC Campus</p>
+
+      <!-- Swipeable Image Carousel -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Mr. Kwame Mensah – 📞 0244 567 890</p>
+    </div>
+
+    <div class="hostel-card" data-name="Victory Lodge" data-location="Apewosika" data-distance="close">
+      <h2>Victory Lodge</h2>
+      <p><strong>Location:</strong> Apewosika, UCC West Gate</p>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Victory+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Madam Abena Nyarko – 📞 0541 321 654</p>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 🏫 UG Section -->
+  <section class="hostels active" id="ug">
+    <div class="hostel-card" data-name="Peace Villa Hostel" data-location="Ayensu" data-distance="close">
+      <h2>Peace Villa Hostel</h2>
+      <p><strong>Location:</strong> Ayensu, UCC Campus</p>
+
+      <!-- Swipeable Image Carousel -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Mr. Kwame Mensah – 📞 0244 567 890</p>
+    </div>
+
+    <div class="hostel-card" data-name="Victory Lodge" data-location="Apewosika" data-distance="close">
+      <h2>Victory Lodge</h2>
+      <p><strong>Location:</strong> Apewosika, UCC West Gate</p>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Victory+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Madam Abena Nyarko – 📞 0541 321 654</p>
+    </div>
+  </section>
+
+
+
+    
+  <!-- 🏫 UG Section -->
+  <section class="hostels active" id="knust">
+    <div class="hostel-card" data-name="Peace Villa Hostel" data-location="Ayensu" data-distance="close">
+      <h2>Peace Villa Hostel</h2>
+      <p><strong>Location:</strong> Ayensu, UCC Campus</p>
+
+      <!-- Swipeable Image Carousel -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Mr. Kwame Mensah – 📞 0244 567 890</p>
+    </div>
+
+    <div class="hostel-card" data-name="Victory Lodge" data-location="Apewosika" data-distance="close">
+      <h2>Victory Lodge</h2>
+      <p><strong>Location:</strong> Apewosika, UCC West Gate</p>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Victory+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Madam Abena Nyarko – 📞 0541 321 654</p>
+    </div>
+  </section>
+
+
+
+  
+  <!-- 🏫 UG Section -->
+  <section class="hostels active" id="uew">
+    <div class="hostel-card" data-name="Peace Villa Hostel" data-location="Ayensu" data-distance="close">
+      <h2>Peace Villa Hostel</h2>
+      <p><strong>Location:</strong> Ayensu, UCC Campus</p>
+
+      <!-- Swipeable Image Carousel -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Mr. Kwame Mensah – 📞 0244 567 890</p>
+    </div>
+
+    <div class="hostel-card" data-name="Victory Lodge" data-location="Apewosika" data-distance="close">
+      <h2>Victory Lodge</h2>
+      <p><strong>Location:</strong> Apewosika, UCC West Gate</p>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Victory+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Madam Abena Nyarko – 📞 0541 321 654</p>
+    </div>
+  </section>
+
+
+
+
+
+
+    
+  <!-- 🏫 UG Section -->
+  <section class="hostels active" id="uds">
+    <div class="hostel-card" data-name="Peace Villa Hostel" data-location="Ayensu" data-distance="close">
+      <h2>Peace Villa Hostel</h2>
+      <p><strong>Location:</strong> Ayensu, UCC Campus</p>
+
+      <!-- Swipeable Image Carousel -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Peace+Villa+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Mr. Kwame Mensah – 📞 0244 567 890</p>
+    </div>
+
+    <div class="hostel-card" data-name="Victory Lodge" data-location="Apewosika" data-distance="close">
+      <h2>Victory Lodge</h2>
+      <p><strong>Location:</strong> Apewosika, UCC West Gate</p>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="https://via.placeholder.com/400x250?text=Victory+1" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+2" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+3" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+4" alt="">
+          <img src="https://via.placeholder.com/400x250?text=Victory+5" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(this, -1)">❮</button>
+        <button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </div>
+
+      <p><strong>Owner:</strong> Madam Abena Nyarko – 📞 0541 321 654</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Hostels_Ghana | Find your perfect campus hostel anywhere in Ghana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+header {
+  background: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  border-bottom: 2px solid #ddd;
+  gap: 0.3rem;
+  padding: 0.5rem;
+}
+
+.tab {
+  background: #eee;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab.active { background: #0056b3; color: white; }
+
+.search-bar { text-align: center; margin: 1rem 0; }
+
+.search-bar input {
+  width: 90%;
+  max-width: 600px;
+  padding: 12px;
+  border: 2px solid #0056b3;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Hostel Cards */
+.hostels {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.hostels.active { display: grid; }
+
+.hostel-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.hostel-card:hover { transform: translateY(-5px); }
+
+/* Carousel (swipeable gallery) */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.4s ease;
+  touch-action: pan-y;
+}
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 220px;
+  object-fit: cover;
+}
+.prev, .next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Footer */
+footer {
+  background: #003d80;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .images img, .carousel-images img { height: 200px; }
+}
