@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -33,9 +37,15 @@ header {
   transition: 0.3s;
 }
 
-.tab.active { background: #0056b3; color: white; }
+.tab.active { 
+  background: #0056b3; 
+  color: white; 
+}
 
-.search-bar { text-align: center; margin: 1rem 0; }
+.search-bar { 
+  text-align: center; 
+  margin: 1rem 0; 
+}
 
 .search-bar input {
   width: 90%;
@@ -54,7 +64,9 @@ header {
   gap: 1rem;
   padding: 1rem;
 }
-.hostels.active { display: grid; }
+.hostels.active { 
+  display: grid; 
+}
 
 .hostel-card {
   background: #fff;
@@ -63,7 +75,9 @@ header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
-.hostel-card:hover { transform: translateY(-5px); }
+.hostel-card:hover { 
+  transform: translateY(-5px); 
+}
 
 /* Carousel (swipeable gallery) */
 .carousel {
