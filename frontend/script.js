@@ -1,4 +1,3 @@
-
 // 🏫 Tab Switching
 function switchTab(tabId, event) {
   document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
